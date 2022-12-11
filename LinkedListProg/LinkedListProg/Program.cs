@@ -47,15 +47,29 @@ namespace LinkedListProg
             //l.Display();
 
             //LL6
-            LinkedList l = new LinkedList();//Create Linked list Objects
-            l.add(56);
-            l.add(30);
-            l.add(70);
-            Console.WriteLine("----------------------------------");
+            //LinkedList l = new LinkedList();//Create Linked list Objects
+            //l.add(56);
+            //l.add(30);
+            //l.add(70);
+            //Console.WriteLine("----------------------------------");
+            //l.Display();
+            //Console.WriteLine("----------------------------------");
+            //l.poplast();//Call Poplast Element function
+            //l.Display();
+
+            //LL7
+            LinkedList l = new LinkedList();//create linked list objects
+            l.Add(56);//add data int the linkedlist
+            l.Add(30);
+            l.Add(70);
+            l.Display();//all display function
+            Console.WriteLine("after searching link list are");
+            Console.WriteLine("enter the element you have to search:");
+            int a = Convert.ToInt32(Console.ReadLine());
+            l.Searchlinkedlist(a);//call search function to call linked list
             l.Display();
-            Console.WriteLine("----------------------------------");
-            l.poplast();//Call Poplast Element function
-            l.Display();
+
+
         }
     }
 }
