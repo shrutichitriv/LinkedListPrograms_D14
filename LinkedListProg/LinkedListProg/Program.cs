@@ -58,16 +58,28 @@ namespace LinkedListProg
             //l.Display();
 
             //LL7
-            LinkedList l = new LinkedList();//create linked list objects
-            l.Add(56);//add data int the linkedlist
-            l.Add(30);
-            l.Add(70);
-            l.Display();//all display function
-            Console.WriteLine("after searching link list are");
-            Console.WriteLine("enter the element you have to search:");
-            int a = Convert.ToInt32(Console.ReadLine());
-            l.Searchlinkedlist(a);//call search function to call linked list
-            l.Display();
+            //LinkedList l = new LinkedList();//create linked list objects
+            //l.Add(56);//add data int the linkedlist
+            //l.Add(30);
+            //l.Add(70);
+            //l.Display();//all display function
+            //Console.WriteLine("after searching link list are");
+            //Console.WriteLine("enter the element you have to search:");
+            //int a = Convert.ToInt32(Console.ReadLine());
+            //l.Searchlinkedlist(a);//call search function to call linked list
+            //l.Display();
+
+            //LL8
+            LinkedList list = new LinkedList();//Create Linked List Object
+            list.Add(56);//Add Data Using Linked list
+            list.Add(30);
+            list.Add(70);
+            list.Display();
+            list.insertwithkey(30, 40);
+            Console.WriteLine("After Insertion Of 40 After 30:");
+            list.Display();
+
+
 
 
         }
